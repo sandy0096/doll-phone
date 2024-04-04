@@ -50,6 +50,7 @@ export const SignContentStyle = StyleSheet.create({
 export const CoverStyle = StyleSheet.create({
     height: 250,
     width: 300,
+    borderRadius: 25,
     resizeMode: 'contain'
 })
 

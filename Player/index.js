@@ -1,10 +1,6 @@
 import Tracks from './tracks.json';
 var Sound = require('react-native-sound');
 
-// await TrackPlayer.setupPlayer();
-
-// await TrackPlayer.add(Tracks);
-
 var globalSound = null;
 
 export const playAudio = (soundIndex) => {
@@ -32,6 +28,12 @@ export const playAudio = (soundIndex) => {
         });
     } catch (e) {
         console.log(`cannot play the sound file`, e)
+    }
+}
+
+export const pauseAudio = () => {
+    if (globalSound) {
+        globalSound.pause();
     }
 }
 
